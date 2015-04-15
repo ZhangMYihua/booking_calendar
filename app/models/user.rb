@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   authenticates_with_sorcery!
+  has_one :trainer
+  has_many :bookings
+
 
   validates :password, length: { minimum: 6 }
   validates :password, confirmation: true

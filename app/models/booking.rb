@@ -1,4 +1,4 @@
 class Booking < ActiveRecord::Base
   belongs_to :user
-  belongs_to :instructor
+  belongs_to :trainer
 end
